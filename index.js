@@ -17,7 +17,9 @@ FB.config({
 
 // enlaze de verificacion facebook y tu servidor
 app.get('/',FB.checkWebhook);
-
+app.get('/test',function(req,res){
+  res.send("Hola desde servidor de pruebas");
+})
 
 let numPeticion = 1;
 
